@@ -1,10 +1,12 @@
 pipeline{
-  stages{
-       stage{
-            steps{
-                 echo "gitHelloWorld"
-            } 
-       }
-  }
+    agent any
+    stages{
+    stage("build"){
+       steps{
 
+        echo "git   gehang hello world"
+    }
+    
+     }
+}
 }
